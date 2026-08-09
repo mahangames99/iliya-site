@@ -269,15 +269,13 @@ body::-webkit-scrollbar-thumb{
         height:50px;
         left:120px;
     }
-    .phone{
-        left:50px;
-        width:60px;
-        height:60px;
-        font-size: 20px;
-    }
     #padkast {
         display:grid;
         grid-template-columns: repeat(2,1fr);
+    }
+    #one {
+        margin:300px 20px 180px 20px;
+        gap:40px;
     }
 
     @keyframes lego_animation {
