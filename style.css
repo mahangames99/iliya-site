@@ -195,13 +195,16 @@ footer {
     align-items: center;
     justify-content: center;
 }
-
+#word {
+    display: flex;
+    flex-direction: row;
+}
 .text {
-    width:120px;
     height:50px;
-    display:inline-flex;
+    display:flex;
     align-items: center;
     justify-content: center;
+    width:100px;
 }
 .active{
     border-radius: 20px;
@@ -248,12 +251,12 @@ body::-webkit-scrollbar-thumb{
     }
 }
 
-@media screen and (max-width:800px) {
+@media screen and (max-width:600px) {
     main{
-        font-size: 25px;
+        font-size: 20px;
     }
     .text {
-        width:100px;
+        width:80px;
     }
     .media {
         width:80px;
