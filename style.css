@@ -64,7 +64,7 @@ header {
 main {
     background-color:white;
     grid-column: 1/13;
-    margin:120px 40px;
+    margin:120px 20px;
     display:flex;
     flex-direction: column;
     justify-content: center;
@@ -81,7 +81,7 @@ main {
     display:flex;
     justify-content: space-around;
     flex-direction: column;
-    margin:100px 40px 180px 40px;
+    margin:100px 20px 180px 20px;
     gap:100px;
 }
 
@@ -277,7 +277,12 @@ body::-webkit-scrollbar-thumb{
     .nav {
         width:80px;
         height:50px;
+        left:120px;
     }
+    .phone {
+        left:100px;
+    }
+
     @keyframes lego_animation {
         0% {
             transform: translateY(-20px)
