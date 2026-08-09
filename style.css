@@ -13,14 +13,6 @@ body {
     overflow-x: hidden;
     box-sizing: border-box;
 }
-@keyframes bodyanimation {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
-}
 
 
 *::selection{
@@ -275,9 +267,6 @@ body::-webkit-scrollbar-thumb{
         width:60px;
         height:60px;
         font-size: 20px;
-    }
-    body {
-        background-color: aqua;
     }
 
     @keyframes lego_animation {
