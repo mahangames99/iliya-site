@@ -51,11 +51,6 @@ header {
     color:#000000
 
 }
-.nav:hover{
-    background-color: white;
-    cursor:pointer;
-    box-shadow: 5px 5px 50px white;
-}
 
 main {
     background-color:white;
@@ -275,7 +270,7 @@ body::-webkit-scrollbar-thumb{
         left:120px;
     }
     .phone{
-        left:70px;
+        left:50px;
         width:60px;
         height:60px;
         font-size: 20px;
@@ -312,12 +307,12 @@ body::-webkit-scrollbar-thumb{
         box-shadow: 5px 5px 50px coral;
         transform: scale(1.1);
     }
-
-    main:hover {
-        box-shadow: 5px 5px 50px coral;
-    }
-
-    #sponsor:hover {
-        box-shadow: 5px 5px 50px coral;
-    }
 }
+
+main:hover {
+        box-shadow: 5px 5px 50px coral;
+    }
+
+#sponsor:hover {
+        box-shadow: 5px 5px 50px coral;
+    }
