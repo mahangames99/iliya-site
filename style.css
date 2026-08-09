@@ -13,6 +13,14 @@ body {
     overflow-x: hidden;
     box-sizing: border-box;
 }
+@keyframes bodyanimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
 
 
 *::selection{
