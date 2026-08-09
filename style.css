@@ -248,7 +248,7 @@ body::-webkit-scrollbar-thumb{
     }
 }
 
-@media screen and (max-width:615px) {
+@media screen and (max-width:700px) {
     main{
         font-size: 25px;
     }
@@ -269,6 +269,12 @@ body::-webkit-scrollbar-thumb{
         width:80px;
         height:50px;
         left:120px;
+    }
+    .phone{
+        left:70px;
+        width:60px;
+        height:60px;
+        font-size: 20px;
     }
 
     @keyframes lego_animation {
