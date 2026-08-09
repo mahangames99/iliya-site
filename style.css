@@ -280,6 +280,10 @@ body::-webkit-scrollbar-thumb{
         height:60px;
         font-size: 20px;
     }
+    #padkast {
+        display:grid;
+        grid-template-columns: repeat(2,1fr);
+    }
 
     @keyframes lego_animation {
         0% {
