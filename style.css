@@ -208,28 +208,30 @@ footer {
 #two {
     height:400px;
     display:flex;
-    justify-content: center;
-    align-items:center;
-    flex-direction: column;
-    margin:30px;
+    justify-content: space-around;
+    margin: 40px;
 }
 
-#sponsor {
-    background-color:white;
-    padding:30px;
-    margin:30px;
-    width:70%;
-    height:auto;
-    font-size: 20px;
-    border:5px solid coral;
-    border-right:30px solid coral ;
-    border-radius: 10px;
-    transition: all 0.3s ease-in-out;
+.sponsor-img{
+    width:100%;
+    height:200px;
+    object-fit: cover;
+    border-bottom: 5px solid #171717;
+}
+
+.sponsor {
+    width:250px;
+    height:400px;
+    background-color: white;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    gap:50px;
+    border: 5px solid coral;
+    transition: all 0.2s ease-in;
 }
+
+
 #word {
     display: flex;
     flex-direction: row;
@@ -328,9 +330,16 @@ body::-webkit-scrollbar-thumb{
         height:70px;
         font-size: 33px;
     }
-    #sponsor{
-        width:80%;
+    #two {
+        height:400px;
+        display:grid;
+        grid-template-columns: repeat(2,1fr);
+        height:1000px;
     }
+    .sponsor {
+        width:150px;
+    }
+
     @keyframes lego_animation {
     0% {
         transform:translateY(0);
@@ -357,12 +366,12 @@ body::-webkit-scrollbar-thumb{
         transform: scale(1.1);
         transform: rotate(360deg);
     }
+    .sponsor:hover {
+        box-shadow: 5px 5px 70px coral;
+        transform: scale(1.1);
+    }
 }
 
 main:hover {
-        box-shadow: 5px 5px 50px coral;
-    }
-
-#sponsor:hover {
         box-shadow: 5px 5px 50px coral;
     }
