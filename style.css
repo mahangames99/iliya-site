@@ -281,6 +281,25 @@ body::-webkit-scrollbar-thumb{
     animation: opacity 2s infinite;
 }
 
+.dot{
+    width:10px;
+    height:10px;
+    background-color: #3d3b3bc3;
+    border-radius: 50%;
+    bottom: 0;
+    position: fixed;
+    animation: dot 7s linear infinite;
+    z-index: -1;
+}
+@keyframes dot {
+    0% {
+        transform:translateY(var(--height));
+    }
+    100% {
+        transform:translateY(-2000px);
+    }
+}
+
 @keyframes opacity {
     0% {
         transform: translateX(30px);

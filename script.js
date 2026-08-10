@@ -66,3 +66,34 @@ phone.addEventListener("click",(event) => {
     }
 })
 
+email.addEventListener("mouseenter",()=> {
+    email.innerHTML = '<i class="fa-solid fa-envelope-open"></i>'
+    setTimeout(() => {
+        email.innerHTML = '<i class="fa-solid fa-envelope"></i>'
+    },2000)
+})
+email.addEventListener("mouseleave",()=>{
+    email.innerHTML = '<i class="fa-solid fa-envelope"></i>'
+})
+
+phone.addEventListener("mouseenter",()=> {
+    phone.innerHTML = '<i class="fa-solid fa-phone-volume"></i>'
+    setTimeout(() => {
+        phone.innerHTML = '<i class="fa-solid fa-phone"></i>'
+    },2000)
+})
+phone.addEventListener("mouseleave",()=>{
+    phone.innerHTML = '<i class="fa-solid fa-phone"></i>'
+})
+
+for(let i = 0; i < 40; i++){
+        const dot = document.createElement("div")
+        document.body.appendChild(dot)
+        dot.classList.add("dot")
+        dot.style.left = Math.random() * 100 + "vw"
+        dot.style.setProperty("--height",Math.random() * 100 + "vh")
+      }
+
+
+
+
