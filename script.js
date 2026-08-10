@@ -25,3 +25,11 @@ setInterval(()=> {
         g = 0;
     }
 },2000)
+
+const phone = document.querySelector(".phone")
+const email = document.querySelector(".email")
+
+setInterval(()=> {
+    phone.classList.toggle("hide")
+    email.classList.toggle("hide")
+},5000)
