@@ -2,6 +2,10 @@ html {
     scroll-behavior: smooth;
 }
 
+* {
+    box-sizing: border-box;
+}
+
 body {
     font-family: 'vazirmatn';
     min-height: 100vh;
@@ -12,7 +16,6 @@ body {
     background: linear-gradient(to right, #171717 0%, #3d3b3b 100%);
     animation: bodyanimation 2s forwards;
     overflow-x: hidden;
-    box-sizing: border-box;
 }
 @keyframes bodyanimation {
     0% {
@@ -198,6 +201,7 @@ footer {
     height:auto;
     font-size: 20px;
     border:5px solid coral;
+    border-right:30px solid coral ;
     border-radius: 10px;
     transition: all 0.3s ease-in-out;
     display: flex;
@@ -215,6 +219,8 @@ footer {
     align-items: center;
     justify-content: center;
     width:100px;
+    text-decoration: none;
+    font-size: 25px;
 }
 .active{
     border-radius: 20px;
@@ -266,6 +272,7 @@ body::-webkit-scrollbar-thumb{
     }
     .text {
         width:75px;
+        font-size: 15px;
     }
     .media {
         width:80px;
