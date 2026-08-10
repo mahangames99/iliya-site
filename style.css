@@ -332,10 +332,13 @@ body::-webkit-scrollbar-thumb{
     }
     #two {
         height:400px;
-        display:grid;
-        grid-template-columns: repeat(2,1fr);
-        column-gap: 50px;
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap:40px;
         height:800px;
+        margin:100px 0px;
     }
     .sponsor {
         width:150px;
