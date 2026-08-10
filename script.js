@@ -28,8 +28,41 @@ setInterval(()=> {
 
 const phone = document.querySelector(".phone")
 const email = document.querySelector(".email")
+const copy = document.querySelector("#copy")
 
 setInterval(()=> {
     phone.classList.toggle("hide")
     email.classList.toggle("hide")
 },5000)
+
+email.addEventListener("click",(event) => {
+    if(window.innerWidth > 700) {
+        event.preventDefault();
+        navigator.clipboard.writeText("andishepodcast@gmail.com")
+        .then(() => {
+            copy.classList.add("copy-show")
+            setTimeout(() => {
+                copy.classList.remove("copy-show")
+            },2000)
+        })
+        .catch(() => {
+            alert("کپی نشد")
+        })
+    }
+})
+phone.addEventListener("click",(event) => {
+    if(window.innerWidth > 700) {
+        event.preventDefault();
+        navigator.clipboard.writeText("09020306043")
+        .then(() => {
+            copy.classList.add("copy-show")
+            setTimeout(() => {
+                copy.classList.remove("copy-show")
+            },2000)
+        })
+        .catch(() => {
+            alert("کپی نشد")
+        })
+    }
+})
+
