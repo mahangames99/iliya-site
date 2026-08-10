@@ -334,10 +334,15 @@ body::-webkit-scrollbar-thumb{
         height:400px;
         display:grid;
         grid-template-columns: repeat(2,1fr);
-        height:1000px;
+        column-gap: 50px;
+        height:800px;
     }
     .sponsor {
         width:150px;
+        height:350px;
+    }
+    .sponsor-img{
+        height:150px;
     }
 
     @keyframes lego_animation {
@@ -375,3 +380,6 @@ body::-webkit-scrollbar-thumb{
 main:hover {
         box-shadow: 5px 5px 50px coral;
     }
+.sponsor:hover {
+        box-shadow: 5px 5px 70px coral;
+}
