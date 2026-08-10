@@ -288,7 +288,7 @@ body::-webkit-scrollbar-thumb{
     border-radius: 50%;
     bottom: 0;
     position: fixed;
-    animation: dot 7s linear infinite;
+    animation: dot 8s linear infinite;
     z-index: -1;
 }
 @keyframes dot {
