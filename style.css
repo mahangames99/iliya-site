@@ -392,6 +392,9 @@ body::-webkit-scrollbar-thumb{
     .sponsor-img{
         height:200px;
     }
+    .offline-show {
+        left: 30%;
+    }
 
     @keyframes lego_animation {
     0% {
