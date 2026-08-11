@@ -117,18 +117,6 @@ main {
     will-change: transform;
 }
 
-@keyframes lego_animation {
-    0% {
-        transform: rotate(0);
-    }
-    50% {
-        transform: rotate(360deg);
-    }
-    100% {
-        transform: rotate(0);
-    }
-}
-
 footer {
     background-color: coral;
     font-size: 20px;
@@ -337,6 +325,10 @@ body::-webkit-scrollbar-thumb{
     animation: bot 2s ease infinite;
 }
 
+h1 {
+    font-size: 25px;
+}
+
 @keyframes bot {
     0%{
         transform: scale(1);
@@ -452,25 +444,15 @@ body::-webkit-scrollbar-thumb{
     }
     #bot-message {
         width:250px;
-        font-size: 10;
+        font-size: 10px;
     }
     .bot {
         width:60px;
         height:60px;
     }
-
-    @keyframes lego_animation {
-    0% {
-        transform:translateY(0);
+    h1{
+        font-size: 15;
     }
-    50% {
-        transform: translateY(-20px);
-    }
-    100% {
-        transform: rotate(0);
-    }
-}
-
 }
 
 @media (hover: hover) {
@@ -482,7 +464,6 @@ body::-webkit-scrollbar-thumb{
 
     .media:hover {
         box-shadow: 5px 5px 70px coral;
-        transform: scale(1.1);
         transform: rotate(360deg);
     }
     .sponsor:hover {
