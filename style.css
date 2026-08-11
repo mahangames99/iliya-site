@@ -306,7 +306,7 @@ body::-webkit-scrollbar-thumb{
     color:white;
     box-shadow: 5px 6px 70px rgba(255, 0, 0, 0.67);
     border-radius: 20px;
-    animation: offline-show 3s ease;
+    animation: offline-show 4s ease;
 }
 
 @keyframes offline-show {
@@ -393,7 +393,7 @@ body::-webkit-scrollbar-thumb{
         height:200px;
     }
     .offline-show {
-        left: 30%;
+        left: 20%;
     }
 
     @keyframes lego_animation {

@@ -104,7 +104,7 @@ window.addEventListener("offline",()=>{
     offline.classList.add("offline-show");
     setTimeout(() => {
         offline.remove()
-    }, 3000);
+    }, 4000);
 })
 
 
