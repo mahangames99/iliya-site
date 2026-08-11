@@ -121,7 +121,7 @@ setInterval(() => {
     botMessage.classList.remove("bot-animation");
     void botMessage.offsetWidth;
     botMessage.classList.add("bot-animation");
-},10000)
+},20000)
 
 const textBot = document.querySelector("#bot-message p")
 tx = ['به سایت ایلیا تحویلی خوش آمدید'
