@@ -393,7 +393,7 @@ body::-webkit-scrollbar-thumb{
         height:200px;
     }
     .offline-show {
-        left: 20%;
+        left: 10%;
     }
 
     @keyframes lego_animation {
