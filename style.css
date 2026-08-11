@@ -309,6 +309,61 @@ body::-webkit-scrollbar-thumb{
     animation: offline-show 4s ease;
 }
 
+#bot-message{
+    width:320px;
+    height:100px;
+    display: flex;
+    position: fixed;
+    top:50px;
+    gap:20px;
+    transform: translateX(500px);
+    align-items: center;
+    background-color: white;
+    border-radius: 10px;
+    border: 5px solid rgb(0, 208, 255);
+    font-size: 15px;
+    box-shadow: 5px 5px 40px rgb(0, 208, 255);
+}
+
+.bot-animation {
+    animation: bot-message 5s ease-in-out;
+}
+
+.bot {
+    width:80px;
+    height:80px;
+    border-radius: 50%;
+    object-fit: cover;
+    animation: bot 2s ease infinite;
+}
+
+@keyframes bot {
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.1);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+@keyframes bot-message {
+    0% {
+        transform: translateX(500px);
+    }
+    30% {
+        transform: translateX(0);
+    }
+    80% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(500px);
+    }
+}
+
+
 @keyframes offline-show {
     0% {
         transform: translateY(0px);
@@ -393,7 +448,7 @@ body::-webkit-scrollbar-thumb{
         height:200px;
     }
     .offline-show {
-        left: 10%;
+        left: 12%;
     }
 
     @keyframes lego_animation {

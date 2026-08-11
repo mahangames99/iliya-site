@@ -107,6 +107,34 @@ window.addEventListener("offline",()=>{
     }, 4000);
 })
 
+const botMessage = document.querySelector("#bot-message")
+const bot = document.querySelector(".bot")
+botMessage.classList.add("bot-animation");
+setInterval(() => {
+    if(bot.getAttribute("src") === "bot1.png"){
+      bot.setAttribute("src","bot2.png")
+    }else {
+        bot.setAttribute("src","bot1.png")
+    }
+},2000)
+setInterval(() => {
+    botMessage.classList.remove("bot-animation");
+    void botMessage.offsetWidth;
+    botMessage.classList.add("bot-animation");
+},10000)
 
+const textBot = document.querySelector("#bot-message p")
+tx = ['به سایت ایلیا تحویلی خوش آمدید'
+    ,'برای تبلیغات به ایمیل پیام بدهید'
+    ,'با جدیدترین پادکست ها همراه  باشید']
+let t = 0
+textBot.textContent = tx[t]
+setInterval(() => {
+    textBot.textContent = tx[t]
+    t++
+    if(t >= tx.length) {
+        t = 0;
+    }
+},5000)
 
 
