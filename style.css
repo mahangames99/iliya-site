@@ -291,6 +291,32 @@ body::-webkit-scrollbar-thumb{
     animation: dot 8s linear infinite;
     z-index: -1;
 }
+
+.offline-show {
+    background-color: rgba(255, 0, 0, 0.671);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    position:fixed;
+    left:42%;
+    top:90%;
+    height:200px;
+    width:300px;
+    color:white;
+    box-shadow: 5px 6px 70px rgba(255, 0, 0, 0.67);
+    border-radius: 20px;
+    animation: offline-show 3s ease;
+}
+
+@keyframes offline-show {
+    0% {
+        transform: translateY(0px);
+    }
+    100% {
+        transform: translateY(-200px);
+    }
+}
 @keyframes dot {
     0% {
         transform:translateY(var(--height));

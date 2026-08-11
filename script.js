@@ -90,12 +90,22 @@ if(window.innerWidth > 700){
 }
 
 for(let i = 0; i < 40; i++){
-        const dot = document.createElement("div")
-        document.body.appendChild(dot)
-        dot.classList.add("dot")
-        dot.style.left = Math.random() * 100 + "vw"
-        dot.style.setProperty("--height",Math.random() * 100 + "vh")
+        const dot = document.createElement("div");
+        document.body.appendChild(dot);
+        dot.classList.add("dot");
+        dot.style.left = Math.random() * 100 + "vw";
+        dot.style.setProperty("--height",Math.random() * 100 + "vh");
 }
+
+window.addEventListener("offline",()=>{
+    let offline = document.createElement("div");
+    document.body.appendChild(offline);
+    offline.innerHTML = "<p>به نظر میاد مشکل اینترنت داری</p><p>لطفا روشن بودن اینترنت رو بررسی کن</p>"
+    offline.classList.add("offline-show");
+    setTimeout(() => {
+        offline.remove()
+    }, 3000);
+})
 
 
 
