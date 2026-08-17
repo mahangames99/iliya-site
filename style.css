@@ -33,7 +33,7 @@ body {
 }
 
 header {
-    background-color: coral;
+    background: linear-gradient(135deg, #ff7f50, #ff4500);
     display:flex;
     flex-direction:row;
     justify-content: space-around;
@@ -139,7 +139,7 @@ footer {
 }
 
 
-footer::after {
+footer::before {
     content: "";
     position: absolute;
     width: 250px;
@@ -278,7 +278,7 @@ footer p {
 .active{
     border-radius: 20px;
     color:white;
-    background-color: coral;
+    background: linear-gradient(135deg, #ff7f50, #ff4500);
    
 }
 body::-webkit-scrollbar {
